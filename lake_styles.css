@@ -23,6 +23,11 @@
     src: url('DobkinPlain.ttf') format('TrueType');}
 
 /* Structural Styles */
+
+/* The structural styles give the web page something to star with, a starting point if you will.
+It changes the main color scheme or palette which include the navigational parts as well as 
+the outskirts of the page and resizing the font of the headings. */
+
 html {
     background-color: rgb(230, 200, 118);
 }
@@ -41,6 +46,11 @@ nav {
 }
 
 /* Header Styles */
+
+/* The header styles mainly make changes to the clickable link attachments by showing you when you 
+are hovering over them by adding color to when you hover over the link and if you have visited them 
+already by giving it a constant color to display if the user has visited that site */
+
 header a {
     background-color: rgb(139, 87, 206);
     padding-top: 5px;
@@ -69,7 +79,9 @@ section h1 {
 
 /* Section Styles */
 
-/* The section styles customize the majority custom attributes of the page. */
+/* The section styles customize the majority custom attributes of the page including 
+the side bars which contain the clickable links that take the user to some websites 
+or information. */
 
 section#leftcol {
     background-color: rgb(236, 225, 195);
@@ -113,10 +125,15 @@ section#rightcol>nav li {
 }
 
 /* Blockquote Styles */
+
+/* The blockquote section of styles changes some designs for a paragraph
+ of text/information as well as create a better looking */
+
 blockquote {
     margin: 20px 5px;
     quotes: "\201C""\201D";
     color: black;
+    font-size: 3em;
  }
  
  blockquote::before {
@@ -134,3 +151,11 @@ blockquote {
  }
 
  /* Footer Styles */
+
+ /* The footer styles just make minor changes to the footer element making the
+  bar gray and recentering the text to look better ont he website itself */
+
+ footer {
+     background-color: gray;
+     text-align: center;
+ }
