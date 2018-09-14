@@ -1,0 +1,136 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Caleb Snow
+   Date:   9/12/18
+   
+   Filename: lake_styles.css
+
+*/
+
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff');
+    src: url('cac_champagne.ttf') format('TrueType');}
+@font-face {
+    font-family: DobkinPlain;
+    src: url('DobkinPlain.woff') format('woff');
+    src: url('DobkinPlain.ttf') format('TrueType');}
+
+/* Structural Styles */
+html {
+    background-color: rgb(230, 200, 118);
+}
+
+body {
+    background-color: rgb(173, 138, 218);
+    text-align: left;
+}
+
+aside h1 {
+    font-size: 1.3em;
+}
+
+nav {
+    background-color: rgb(173, 138, 218);
+}
+
+/* Header Styles */
+header a {
+    background-color: rgb(139, 87, 206);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover,
+header a:visited {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+
+header a:hover,
+header a:active {
+    color: white;
+}
+
+section h1 {
+    font-size: 3em;
+    font-family: champagne, cursive;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Section Styles */
+
+/* The section styles customize the majority custom attributes of the page. */
+
+section#leftcol {
+    background-color: rgb(236, 225, 195);
+}
+
+section#leftcol aside h1 {
+    font-size: 2em;
+    font-family: champagne, 'DobkinPlain', sans-serif;
+}
+
+section#leftcol aside:first-of-type {
+    background-color: rgb(202, 85, 70);
+}
+
+section#leftcol aside:nth-of-type(2) {
+    background-color: rgb(201, 162, 56)
+}
+section#rightcol {
+    text-decoration: none;
+    text-align: left;
+}
+
+section#rightcol h2 {
+    font-size: 1.5em;
+    font-family: DobkinPlain;
+    text-align: center;
+}
+
+section#rightcol>nav a:link,
+section#rightcol>nav a:visited {
+    text-decoration: none;
+    color:black;
+}
+section#rightcol>nav a:active, 
+section#rightcol>nav a:hover {
+    color: white;
+}
+
+section#rightcol>nav li {
+    list-style-type: none;
+}
+
+/* Blockquote Styles */
+blockquote {
+    margin: 20px 5px;
+    quotes: "\201C""\201D";
+    color: black;
+ }
+ 
+ blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    opacity: 0.4;
+    font-family: champagne;
+ }
+ 
+ blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    opacity: 0.4;
+    font-family: champagne;
+ }
+
+ /* Footer Styles */
